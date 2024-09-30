@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Ruslan/IdeaProjects/AutoTesting">
+<!--        <parameter name="login" value="admin"/>-->
+<!--        <parameter name="password" value="admin"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="regress"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+        <classes>
+            <class name="tests.BaseTest">
+                <methods><include name="openWebTest"/></methods>
+                <methods><include name="loginTest"/></methods>
+                <methods><include name="addPhoneToCartTest"/></methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
